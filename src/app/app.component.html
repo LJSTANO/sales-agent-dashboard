@@ -1,0 +1,22 @@
+<main class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 side-nav">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <span>My App</span>
+      </div>
+      <nav>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Dashboard</a>
+        <a routerLink="/schools" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Schools</a>
+        <a routerLink="/invoices" routerLinkActive="active">Invoices</a>
+        <a routerLink="/collections" routerLinkActive="active">Collections</a>
+      </nav>
+      <div class="footer">
+        <p>&copy; 2023 My App</p>
+      </div>
+    </div>
+    <div class="col-md-10 content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</main>
